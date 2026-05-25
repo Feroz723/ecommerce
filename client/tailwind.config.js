@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -20,6 +24,6 @@ export default {
       '2': '2px',
     },
   },
-  plugins: [require("tailwind-typography-cssstyle")],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
 
