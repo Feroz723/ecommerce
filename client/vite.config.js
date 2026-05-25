@@ -16,4 +16,4 @@ export default defineConfig({
     host: '0.0.0.0',  // Allows access from any network interface
     port: 5173,       // You can specify a port if you want to use a different one
   },
-})
+});

@@ -18,7 +18,7 @@ app.use("/api", router);
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(process.env.MONGODB_URI);
+        await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/shoevista');
         console.log(`App is connected to the database.`)
     } catch (error) {
         console.error(`Error connecting to DB: ${error.message}`);
